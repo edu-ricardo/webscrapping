@@ -15,7 +15,8 @@ rp(options)
 
         li.each((_i, element) => { 
             var link = $(element).children('a');
-            console.log(link.attr('href'));
+            if (link.attr('href'))
+                console.log(link.attr('href'));
         });
         
     })
